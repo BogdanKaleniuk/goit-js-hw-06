@@ -12,3 +12,10 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const gallaryItem = ({ url, alt }) =>
+  `<li><img src =${url} alt=${alt} wigth = 1260, height = 750></li>`;
+const gallaryReduce = images.reduce((acc, item) => acc + gallaryItem(item), '');
+
+const gallaryList = document.querySelector('.gallery');
+gallaryList.insertAdjacentHTML('afterbegin', gallaryReduce);
