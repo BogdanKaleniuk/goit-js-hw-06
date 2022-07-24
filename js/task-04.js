@@ -27,3 +27,26 @@ decBtn.addEventListener('click', () => {
 
 // decBtn.addEventListener('click' decrement);
 // incBrn.addEventListener('click' increment);
+
+// const decBtn = document.querySelector('[data-action="decrement"]');
+// const incBtn = document.querySelector('[data-action="increment"]');
+// const counterValue = document.querySelector('#value');
+
+// incBtn.addEventListener('click', event => {
+//   console.log(event);
+//   console.log('Вешаю слушателя с целевой кнопки');
+//   counterValue.addEventListener('click', onTargetBtnClick);
+// });
+
+// decBtn.addEventListener('click', event => {
+//   counter.decrement();
+//   counterValue.textContent = counter.value;
+//   console.log(event);
+//   console.log('Снимаю слушателя с целевой кнопки');
+//   counterValue.removeEventListener('click', onTargetBtnClick);
+// });
+
+// function onTargetBtnClick(event) {
+//   console.log(event);
+//   console.log('Клик по целевой кнопке');
+// }
