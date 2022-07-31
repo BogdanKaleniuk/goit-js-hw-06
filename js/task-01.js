@@ -47,9 +47,6 @@
 // Category: Technologies
 // Elements: 5
 
-
-
-
 // const totalCagegories = document.querySelectorAll('.item');
 // console.log('Number of categories:', totalCagegories.length);
 

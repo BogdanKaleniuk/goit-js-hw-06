@@ -3,9 +3,6 @@
 // <input type="text" id="name-input" placeholder="Please enter your name" />
 // <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
-
-
-
 const formLink = document.getElementById('name-input');
 const nameForm = document.getElementById('name-output');
 

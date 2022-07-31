@@ -22,13 +22,27 @@ form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
-  const forElements = event.currentTarget.elements;
+  const { email, password } = event.target.elements;
+  // const forElements = event.currentTarget.elements;
   //   console.log(forElements);
   console.log('Предотвращает перезагрузку');
-  const mail = forElements.email.value;
-  const password = forElements.password.value;
+  const emailValue = email.value;
+  const passwordValue = password.value;
+  // const email = forElements.email.value;
+  // const password = forElements.password.value;
+  // const formData = new formData(event.currentTarget);
+  // console.log(formData);
 
-  console.log('Email:', mail);
-  console.log('Password:', password);
+  // formData.forEach((email, password) => {
+  //   console.log('email:', email);
+  //   console.log('password:', password);
+  // });
+  if (emailValue === '' || passwordValue === '') {
+    alert(`Всі поля мають бути заповнені!!!`);
+  }
+  console.log(emailValue);
+  console.log(passwordValue);
+  // console.log('Email:', mail);
+  // console.log('Password:', password);
   form.reset();
 }

@@ -36,6 +36,7 @@ const liForEach = ingredients.forEach(ingredient => {
 });
 console.log(liForEach);
 
+
 // elemLi.classList.add('item');
 // elemLi.textContent = [...ingredients];
 // document.body.ingredients.append(elemLi);
